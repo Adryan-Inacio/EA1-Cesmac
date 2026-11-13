@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Cursos</title>
+</head>
+<body>
+    <h1>Cursos Cadastrados</h1>
+    <hr>
+    {% for curso in cursos %}
+        <h2>{{ curso.titulo }}</h2>
+        <p>{{ curso.descricao }}</p>
+        <p><strong>Alunos matriculados:</strong></p>
+        {% for aluno in curso.alunos.all %}
+            <p>{{ aluno.nome }} {{ aluno.sobrenome }}</p>
+        {% empty %}
+            <p>Nenhum aluno matriculado neste curso.</p>
+        {% endfor %}
+    {% empty %}
+        <p>Nenhum curso cadastrado ainda.</p>
+    {% endfor %}
+</body>
+</html>
