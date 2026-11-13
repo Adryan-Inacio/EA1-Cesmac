@@ -8,7 +8,7 @@ Sistema web simples desenvolvido em Python com o framework Django para o cadastr
 
 ## Como baixar e executar
 
-Comando para clonar o repositório:
+Comandos para clonar o repositório:
 
 ```bash
 git clone https://github.com/Adryan-Inacio/EA1-Cesmac.git
